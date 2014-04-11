@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('server', [
   //  'jshint',
-   'bower',
+  // 'bower',
    'express:dev',
    'open',
    'watch'
@@ -103,18 +103,18 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
      //  'jshint',
-    'bower',
+   // 'bower',
     'karma'
   ]);
 
   grunt.registerTask('heroku:production', [
-    'bower'
+    //'bower'
   ]);
 
 
   grunt.registerTask('default', [
     //  'jshint',
-    'bower'
+   // 'bower'
   ]);
 
 };
