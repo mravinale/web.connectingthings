@@ -2,6 +2,8 @@
 
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
     yeoman: {
@@ -109,8 +111,6 @@ module.exports = function (grunt) {
     'bower'
   ]);
 
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', [
     //  'jshint',
