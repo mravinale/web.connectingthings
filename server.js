@@ -45,7 +45,7 @@ app.use(app.router);
 require('./api/config/routes')(app);
 
 // Start server
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3100;
 app.listen(port, function () {
     console.log('listening on port %d in %s mode', port, app.get('env'));
 });
