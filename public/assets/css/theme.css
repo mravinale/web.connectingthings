@@ -1524,6 +1524,11 @@ section.dark.with-bg {
   background-size: cover;
   min-height: 800px;
 }
+section.dark.with-bg2 {
+    background: url('../img/bg-content2.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
 section.dark h1,
 section.dark h2,
 section.dark h4,
