@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=document.getElementById("vimeo-video"),d=$f(o);$("#modal-video").on("hidden.bs.modal",function(){d.api("pause")}),$("#modal-video").on("shown.bs.modal",function(){d.api("play")})});
