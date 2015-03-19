@@ -3,22 +3,10 @@
 // Module dependencies.
 var express = require('express'),
     http = require('http'),
-    passport = require('passport'),
     path = require('path'),
     fs = require('fs'),
-    mongoStore = require('connect-mongo')(express),
-    config = require('./api/config/config');
+ app = express();
 
-var app = express();
-
-// Connect to database
-var db = require('./api/db/mongo').db;
-
-// Bootstrap models
-var modelsPath = path.join(__dirname, 'api/models');
-fs.readdirSync(modelsPath).forEach( function (file) { require(modelsPath + '/' + file); });
-
-var pass = require('./api/config/passport');
 
 // Environments configuration
 app.configure( function(){
@@ -31,18 +19,9 @@ app.use(express.cookieParser());
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 
-// express/mongo session storage
-app.use(express.session({
-  secret: 'MEANP', store: new mongoStore({ url: config.db, collection: 'sessions' })
-}));
-
-// Use passport session
-app.use(passport.initialize());
-app.use(passport.session());
 
 // Bootstrap routes
 app.use(app.router);
-require('./api/config/routes')(app);
 
 // Start server
 var port = process.env.PORT || 3100;
