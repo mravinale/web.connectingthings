@@ -24,12 +24,6 @@ module.exports = function (grunt) {
         '<%= yeoman.app %>/scripts/{,*/}*.js'
       ]
     },
-    karma: {
-      unit: {
-        configFile: 'test/karma.conf.js',
-        singleRun: true
-      }
-    },
     express: {
           options: {
               port: process.env.PORT || 9000
@@ -89,7 +83,6 @@ module.exports = function (grunt) {
       }
 
   });
-  
 
   grunt.registerTask('server', [
   //  'jshint',
@@ -99,20 +92,5 @@ module.exports = function (grunt) {
    'watch'
   ]);
 
-  grunt.registerTask('test', [
-     //  'jshint',
-   // 'bower',
-    'karma'
-  ]);
-
-  grunt.registerTask('heroku:production', [
-    //'bower'
-  ]);
-
-
-  grunt.registerTask('default', [
-    //  'jshint',
-   // 'bower'
-  ]);
 
 };
