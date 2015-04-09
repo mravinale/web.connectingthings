@@ -348,7 +348,8 @@ blockquote {
   color: white;
 }
 .navbar-brand img {
-  max-width: 160px;
+  max-width: 55px;
+    margin-top: -18px;
 }
 .navbar-inverse {
   background-color: #222222;
