@@ -654,6 +654,7 @@ section .login-overlay {
   overflow: hidden;
   position: relative;
   width: 100%;
+    margin-top: -80px;  margin-bottom: -80px;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
@@ -2677,3 +2678,4 @@ footer.footer .icon {
     padding: 1.5em 1em;
   }
 }
+
