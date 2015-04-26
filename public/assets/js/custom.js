@@ -393,8 +393,8 @@ $(window).scroll(function() {
 //Placeholder fixed for Internet Explorer
 $(function() {
 	var input = document.createElement("input");
-	if(('placeholder' in input)==false) { 
-		$('[placeholder]').focus(function() {
+	if(('placeholder' in input)==false) {
+        $('[placeholder]').focus(function() {
 			var i = $(this);
 			if(i.val() == i.attr('placeholder')) {
 				i.val('').removeClass('placeholder');
