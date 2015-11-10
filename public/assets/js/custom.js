@@ -21,6 +21,7 @@ function init() {
   onePageScroll();
   scrollAnchor();
   toggleContactForm();
+  onepageScroll();
 }
 
 
@@ -57,6 +58,15 @@ function fullScreenContainer() {
       
   });
 
+}
+
+/* --- onepage-scroll------------- */
+function onepageScroll() {
+  $("body").onepage_scroll({
+    sectionContainer: ".section-scroll",
+    animationTime   : 300,
+    pagination: true
+  });
 }
 
 
