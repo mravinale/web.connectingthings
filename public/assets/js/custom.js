@@ -21,7 +21,7 @@ function init() {
   onePageScroll();
   scrollAnchor();
   toggleContactForm();
-  onepageScroll();
+ // onepageScroll();
 }
 
 
@@ -140,7 +140,7 @@ window.scrollReveal = new scrollReveal();
 
 
 /* --- magnific popup ------------------- */
-
+/*
 function magnificPopup() {
 
   // Gallery
@@ -211,7 +211,7 @@ function magnificPopup() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 }
-
+*/
 
 
 /* --- Isotope ------------------- */

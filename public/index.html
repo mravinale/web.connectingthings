@@ -15,6 +15,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"!-->
+
     <link href="assets/css/theme.css" rel="stylesheet">
     <link href="assets/css/shadows.css" rel="stylesheet">
 
@@ -64,7 +66,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <h1><a class="navbar-brand scroll" href="#intro-video"> <img src="assets/img/Logo_imagen.png"></img>Connecting Things</a></h1>
+                    <h1><a class="navbar-brand scroll" href="#intro-video"> <img src="assets/img/Logo_imagen.png">Connecting Things</a></h1>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
@@ -84,7 +86,7 @@
 
 <!-- Hero Banner
 ================================================== -->
-<div id="intro-video" class="section-scroll" style="background-image: url( 'assets/img/bg-videofallback.png' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div id="intro-video" class="section-scroll" style="background-image: url( 'assets/img/placeit_main.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!--a class="player" data-property="{videoURL:'http://youtu.be/CT9_nrB0DuU',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a!-->
     <div class="item">
         <div class="container">
@@ -92,7 +94,7 @@
                 <div class="carousel-caption-center colour-white">
                     <h1>The IOT cloud platform for your devices</h1>
                     <h3>Create your dashboard in minutes easily, </h3>
-                    <p><a class="btn btn-lg btn-primary scroll" href="#contact" role="button">Be part of our beta release </a></p>
+                    <p><a class="btn btn-lg btn-primary scroll" data-toggle="modal" data-target="#myModal">Be part of our beta release </a></p>
                 </div>
             </div>
         </div>
@@ -134,7 +136,7 @@
         </div><!--//item-->
     </div><!--//container-->
 </section><!--//why-->
-<section class="dark with-bg section-scroll" style="background-image: url( 'assets/img/iot-mockup.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<section class="dark with-bg section-scroll" style="background-image: url( 'assets/img/iot-mockup.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;" >
 
     <div class="container">
         <div class="row">
@@ -198,8 +200,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 overlay-text col-sm-offset-6" style="margin-top: 300px;">
-                <div class="vertical-align">
+            <div class="col-sm-6 overlay-text col-sm-offset-7" >
+                <div class="vertical-align" style="margin-top: -20px;">
                     <h2>You dashboard everywhere</h2>
                     <p>
                         You'll be able to create a custom dashboard, as you always wanted accessible from any device.
@@ -246,26 +248,166 @@
     </div>
 </section>
 
-<!-- Call to Action
-================================================== -->
-<section class="cta text-center section-scroll" id="contact" style="background: url('assets/img/bg-locations.jpg') center center no-repeat; background-size: cover;min-height: 400px" >
+<section class="dark with-bg section-scroll" style="background-image: url( 'assets/img/placeit.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12" style="padding-top: 60px;">
-                <h2 style="color: white;">Be part of our beta release </h2>
-                <p><!--button class="btn contact-button" type="button" role="button"  style="opacity: 0.8;">Click here</button--></p>
-                <div class='contact-form' style="display: block;">
-                <iframe id="doppler_subscription" src="http://app2.fromdoppler.com/Lists/FormProcessing/Form?idForm=qxONE4SKmQNoCUqh2YCYbg%3d%3d"  style=" border-radius: 15px; opacity: 0.8; overflow-y: hidden; height:325px width:425"  height="325" width="425"  scrolling="no"  frameborder="no" ></iframe>
+        <div class="row" style="margin-top: 30%;">
+            <div class="col-sm-6 overlay-text col-sm-offset-7">
+                <div class="vertical-align">
+                    <h2>From prototype to production</h2>
+                    <p>Our platform is a full responsive web stack build for support your internet connected devices
+                        in a very easy and intuitive way. We make complex things easier,
+                    </p>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <div class="overlay-bg black"></div>
 
 </section>
 
+<!-- Call to Action
+================================================== -->
+<section class="features-tabbed section">
+    <div class="container">
+        <h2 class="title text-center">Product Features</h2>
+        <div class="row">
+            <div class=" text-center col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs text-center" role="tablist">
+                    <li class="active"><a href="#feature-1" role="tab" data-toggle="tab"><i class="fa fa-cloud-upload"></i><br /><span class="hidden-sm hidden-xs">Feature One</span></a></li>
+                    <li><a href="#feature-2" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i><br /><span class="hidden-sm hidden-xs">Feature Two</span></a></li>
+                    <li><a href="#feature-3" role="tab" data-toggle="tab"><i class="fa fa-photo"></i><br /><span class="hidden-sm hidden-xs">Feature Three</span></a></li>
+                    <li class="last"><a href="#feature-4" role="tab" data-toggle="tab"><i class="fa fa-users"></i><br /><span class="hidden-sm hidden-xs">Feature Four</span></a></li>
+                </ul><!--//nav-tabs-->
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="feature-1">
+                        <h3 class="title sr-only">Feature One</h3>
+                        <figure class="figure text-center">
+                            <img class="img-responsive" src="assets/images/features/screenshot-1.png" alt="" />
+                            <figcaption class="figure-caption">(Screenshot source: Coral - App &amp; website startup kit)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo mauris, a fringilla nisi posuere tincidunt. Aliquam elementum lorem eget sollicitudin suscipit.</p>
+                            <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-star"></i>Lorem ipsum dolor sit amet.</li>
+                                <li><i class="fa fa-star"></i>Aliquam tincidunt mauris eu risus.</li>
+                                <li><i class="fa fa-star"></i>Ultricies eget vel aliquam libero.</li>
+                                <li><i class="fa fa-star"></i>Maecenas nec odio.</li>
+                            </ul>
+
+                            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                    <div class="tab-pane" id="feature-2">
+                        <h3 class="title sr-only">Feature Two</h3>
+                        <figure class="figure text-center">
+                            <img class="img-responsive" src="assets/images/features/screenshot-2.png" alt="" />
+                            <figcaption class="figure-caption">(Screenshot source: Coral - App &amp; website startup kit)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo mauris, a fringilla nisi posuere tincidunt. Aliquam elementum lorem eget sollicitudin suscipit.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero ultricies tempus. Duis porta justo quam, ut ultrices felis posuere sit amet. Sed imperdiet bibendum est, sit amet sagittis ante sagittis eu. <a href="#">Integer fringilla</a> a purus sit amet laoreet. Ut consequat volutpat sapien sed lobortis. Nullam laoreet vitae justo nec dignissim.
+                            </p>
+                            <blockquote>
+                                <p>Viverra magna pellentesque in magnis gravida sit augue felis vehicula vestibulum semper penatibus justo ornare semper Gravida felis platea arcu mus non. Montes at posuere. Natoque.</p>
+                            </blockquote>
+
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                    <div class="tab-pane" id="feature-3">
+                        <h3 class="title sr-only">Feature Three</h3>
+                        <figure class="figure text-center">
+                            <img class="img-responsive" src="assets/images/features/screenshot-3.png" alt="" />
+                            <figcaption class="figure-caption">(Screenshot source: Coral - App &amp; website startup kit)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo mauris, a fringilla nisi posuere tincidunt. Aliquam elementum lorem eget sollicitudin suscipit.</p>
+
+                            <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Nullam consequat</th>
+                                        <th>Commodo metus</th>
+                                        <th>Dapibus porta</th>
+                                        <th>Sed porta</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Faucibus purus</td>
+                                        <td>Aliquam sit</td>
+                                        <td>Sed porta leo</td>
+                                        <td>Duis ut ornare dui</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Condimentum</td>
+                                        <td>Curabitur tempus</td>
+                                        <td>Fusce vehicula</td>
+                                        <td>Nasceturs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neque a condimentum</td>
+                                        <td>Cum sociis natoque</td>
+                                        <td>Penatibus magnis</td>
+                                        <td>Curabitur</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div><!--//table-responsive-->
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                    <div class="tab-pane" id="feature-4">
+                        <h3 class="title sr-only">Feature Four</h3>
+                        <figure class="figure text-center">
+                            <img class="img-responsive" src="assets/images/features/screenshot-4.png" alt="" />
+                            <figcaption class="figure-caption">(Screenshot source: Coral - App &amp; website startup kit)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo mauris, a fringilla nisi posuere tincidunt. Aliquam elementum lorem eget sollicitudin suscipit.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu</p>
+                            <p class="box">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero ultricies tempus. Duis porta justo quam, ut ultrices felis posuere sit amet. Sed imperdiet bibendum est, sit amet sagittis ante sagittis eu. Ut consequat volutpat sapien sed lobortis. Nullam laoreet vitae justo nec dignissim.
+                            </p>
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                </div><!--//tab-content-->
+            </div><!--//col-md-x-->
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//features-tabbed-->
+
+<!-- ******Steps Section****** -->
+<section class="steps section">
+    <div class="container">
+        <h2 class="title text-center">3 Simple Steps to Get you started with Velocity</h2>
+        <div class="row">
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">1</span><br /><span class="text">Sign up</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div><!--//step-->
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">2</span><br /><span class="text">Choose your lorem ipsum</span></h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div><!--//step-->
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">3</span><br /><span class="text">Start building ipsum</span></h3>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
+            </div><!--//step-->
+        </div><!--//row-->
+
+        <div class="text-center"><a class="btn btn-cta btn-cta-primary" href="signup.html">Get Started - It's Free</a></div>
+
+    </div><!--//container-->
+</section><!--//steps-->
 
 <!-- Footer
 ================================================== -->
@@ -318,12 +460,28 @@
 
 
 
+<!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog" style="width: 427px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Be part of our beta release</h4>
+                </div>
+                <div   style="display: block;">
+                    <iframe id="doppler_subscription" src="http://app2.fromdoppler.com/Lists/FormProcessing/Form?idForm=qxONE4SKmQNoCUqh2YCYbg%3d%3d"  style=" border-radius: 15px; opacity: 0.8; overflow-y: hidden; height:325px width:425"  height="325" width="425"  scrolling="no"  frameborder="no" ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery-1.10.2.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<!--script src="assets/js/bootstrap.min.js"></script!-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/cbpAnimatedHeader.min.js"></script>
 <script src="assets/js/jquery.mb.YTPlayer.js"></script>
@@ -336,6 +494,7 @@
 <script src="assets/js/jquery.nav.js" defer="defer"></script>
 <script src="assets/js/jquery.onepage-scroll.js" defer="defer"></script>
 <script src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/parallax.min.js"></script>
 <!--script src="//localhost:35729/livereload.js"></script!-->
 
 <script>
