@@ -22,6 +22,12 @@ function init() {
   scrollAnchor();
   toggleContactForm();
  // onepageScroll();
+
+  $('.img-holder').imageScroll({
+    holderMinHeight: 700,
+    holderMaxHeight: 700
+
+  });
 }
 
 
