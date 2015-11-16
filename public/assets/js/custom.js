@@ -25,7 +25,9 @@ function init() {
 
   $('.img-holder').imageScroll({
     holderMinHeight: 700,
-    holderMaxHeight: 700
+    holderMaxHeight: 700,
+
+    imgClass: 'perfect-fit'
 
   });
 }

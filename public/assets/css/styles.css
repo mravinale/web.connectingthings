@@ -3376,3 +3376,11 @@ select {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
+
+img.perfect-fit {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow:hidden;
+}
