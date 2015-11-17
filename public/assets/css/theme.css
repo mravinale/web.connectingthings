@@ -459,7 +459,7 @@ blockquote {
 }
 .cbp-af-header.cbp-af-header-shrink h1,
 .cbp-af-header.cbp-af-header-shrink .nav a {
-
+  /*line-height: 40px;*/
   color: black;
 }
 .cbp-af-header.cbp-af-header-shrink .nav a.btn {
@@ -488,17 +488,18 @@ blockquote {
     margin: 0 auto;
     text-align: center;
     float: none;
+    font-size: 10px;
   }
   .cbp-af-header h1,
   .cbp-af-header .nav a {
-    line-height: 115px;
+    line-height: 25px;
   }
   .cbp-af-header .nav a {
     margin: 0 10px;
   }
   .cbp-af-header.cbp-af-header-shrink h1,
   .cbp-af-header.cbp-af-header-shrink .nav a {
-    line-height: 45px;
+    line-height: 25px;
   }
   .cbp-af-header.cbp-af-header-shrink h1 {
     font-size: 2em;
@@ -1915,6 +1916,7 @@ section .overlay-text {
   -webkit-transform: translateY(0px);
 }
 @media screen and (max-width: 31.5em) {
+
   .grid {
     padding: 10px 10px 100px 10px;
   }
@@ -2367,12 +2369,14 @@ footer.footer .icon {
   transition: all 0.2s linear;
 }
 @media (max-width: 992px) {
+
   .cbp-af-header h1,
   .cbp-af-header .nav a {
-    line-height: 72px;
+    line-height: 45px;
+    font-size: 10px;
   }
   .cbp-af-header.cbp-af-header-shrink h1 {
-    font-size: 1em;
+    font-size: 10px;
   }
   .cbp-af-header h1 {
     margin: 0 auto;
@@ -2382,6 +2386,7 @@ footer.footer .icon {
   }
   .cbp-af-header.cbp-af-header-shrink h1 a {
     margin: 0.1em 0;
+    font-size: 10px;
   }
   section.content h2 {
     font-size: 2.5em;
@@ -2404,6 +2409,10 @@ footer.footer .icon {
   }
 }
 @media (max-width: 1199px) {
+  .cbp-af-header h1 {
+    font-size: 18px;
+    line-height: 40px;
+  }
   #intro .carousel-caption-center,
   #intro-video .carousel-caption-center {
     max-height: 258px;
@@ -2443,6 +2452,10 @@ footer.footer .icon {
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
+  .cbp-af-header h1 {
+    font-size: 12px;
+
+  }
   #pricing .plan {
     max-width: 400px;
     margin: 0 auto 2em;
@@ -2457,6 +2470,9 @@ footer.footer .icon {
   }
 }
 @media (max-width: 767px) {
+  .cbp-af-header h1 {
+    font-size: 12px;
+  }
   .img-overlap {
     margin-bottom: -110px;
   }
@@ -2605,8 +2621,9 @@ footer.footer .icon {
   }
 }
 @media (max-width: 480px) {
+
   .cbp-af-header h1 {
-    font-size: 1.5em;
+    font-size: 9px;
   }
   .cbp-af-header .nav a.btn {
     display: block;
