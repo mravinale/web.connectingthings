@@ -82,8 +82,8 @@ a.btn-ghost,
 }
 a.btn-ghost:hover,
 .btn-ghost:hover {
-  background: #4a6781;
-  border: 1px solid #4a6781;
+  background: #ec6952;
+  border: 1px solid #ec6952;
   color: #fff;
 }
 a.btn-ghost .fa,
@@ -558,7 +558,7 @@ select {
 }
 .why .item .title {
   font-size: 26px;
-  color: #4a6781;
+  color: #ec6952;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -1247,7 +1247,7 @@ select {
 }
 .pricing .item .feature-list li .fa {
   margin-right: 5px;
-  color: #4a6781;
+  color: #ec6952;
 }
 .pricing .item .feature-list li.disabled {
   color: #999999;
@@ -1885,7 +1885,7 @@ select {
 .blog-entry-wrapper .blog-entry .blog-entry-content h4,
 .blog-entry-wrapper .blog-entry .blog-entry-content h5,
 .blog-entry-wrapper .blog-entry .blog-entry-content h6 {
-  color: #4a6781;
+  color: #ec6952;
 }
 .blog-entry-wrapper .blog-entry .blog-entry-content h1.section-heading,
 .blog-entry-wrapper .blog-entry .blog-entry-content h2.section-heading,
@@ -2524,8 +2524,8 @@ select {
   border-color: #5d80a1;
 }
 .footer .footer-col.connect .btn-cta-primary:hover {
-  background: #4a6781;
-  border-color: #4a6781;
+  background: #ec6952;
+  border-color: #ec6952;
 }
 .footer .footer-col .title {
   color: #fff;
@@ -3376,3 +3376,11 @@ select {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
+
+img.perfect-fit {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow:hidden;
+}

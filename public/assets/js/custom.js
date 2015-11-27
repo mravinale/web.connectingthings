@@ -21,7 +21,15 @@ function init() {
   onePageScroll();
   scrollAnchor();
   toggleContactForm();
-  onepageScroll();
+ // onepageScroll();
+
+  $('.img-holder').imageScroll({
+    holderMinHeight: 700,
+    holderMaxHeight: 700,
+
+    imgClass: 'perfect-fit'
+
+  });
 }
 
 
@@ -140,7 +148,7 @@ window.scrollReveal = new scrollReveal();
 
 
 /* --- magnific popup ------------------- */
-
+/*
 function magnificPopup() {
 
   // Gallery
@@ -211,33 +219,8 @@ function magnificPopup() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 }
+*/
 
-
-
-/* --- Isotope ------------------- */
-
-function isotope() {
-
- var $container = $('#portfolio');
-
- // init
- $container.imagesLoaded( function(){
-   $container.isotope({
-     // options
-     itemSelector: '.portfolio-item',
-     layoutMode: 'fitRows'
-   });
- });
-
- // filter items on button click
- $('#filters').on( 'click', 'button', function( event ) {
-   var filterValue = $(this).attr('data-filter-value');
-   $container.isotope({ filter: filterValue });
-   $('#filters button').removeClass('active');
-   $(this).addClass('active');
- });
-
-}
 
 
 /* --- Scroll to Anchor ------------------- */
@@ -440,5 +423,5 @@ $('#name').focus(function() {
 
 $(document).ready(function(){
     $(".player").mb_YTPlayer();
-    isotope();
+
 });

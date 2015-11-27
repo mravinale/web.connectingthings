@@ -15,6 +15,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"!-->
+
     <link href="assets/css/theme.css" rel="stylesheet">
     <link href="assets/css/shadows.css" rel="stylesheet">
 
@@ -52,10 +54,12 @@
 ================================================== -->
 <div class="navbar-wrapper cbp-af-header">
     <div class="container">
-
+        <h1 class="logo-ct" style="  text-align: center;   margin: 0.6em 0;">
+            <a class="navbar-brand scroll" href="#intro-video"> <img style="max-width: 35px;padding-top: 12px" src="assets/img/Logo_imagen.png">Connecting Things</a>
+        </h1>
         <!-- Fixed navbar -->
         <div class="navbar cbp-af-inner" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -63,16 +67,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <h1><a class="navbar-brand scroll" href="#intro-video"> <img src="assets/img/Logo_imagen.png"></img>Connecting Things</a></h1>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
                         <li><a href="#intro-video">Home</a></li>
-                        <li><a href="#What">What</a></li>
-                        <li><a href="#Why">Why</a></li>
-                        <li><a href="#How">How</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#What">What Is?</a></li>
+                        <li><a href="#Why">Why?</a></li>
+                        <li><a href="#Features">Features</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +85,7 @@
 
 <!-- Hero Banner
 ================================================== -->
-<div id="intro-video" class="section-scroll" style="background-image: url( 'assets/img/bg-videofallback.png' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div id="intro-video" class="section-scroll" style="background-image: url( 'assets/img/placeit_main.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!--a class="player" data-property="{videoURL:'http://youtu.be/CT9_nrB0DuU',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a!-->
     <div class="item">
         <div class="container">
@@ -92,7 +93,7 @@
                 <div class="carousel-caption-center colour-white">
                     <h1>The IOT cloud platform for your devices</h1>
                     <h3>Create your dashboard in minutes easily, </h3>
-                    <p><a class="btn btn-lg btn-primary scroll" href="#contact" role="button">Be part of our beta release </a></p>
+                    <p><a class="btn btn-lg btn-primary scroll" data-toggle="modal" data-target="#myModal">Be part of our beta release </a></p>
                 </div>
             </div>
         </div>
@@ -100,7 +101,7 @@
     </div>
 </div>
 
-<!-- ******Why Section****** -->
+
 <section class="section why section-scroll"  id="What">
     <div class="container">
         <h2 class="title text-center">What is connectingthings?</h2>
@@ -109,21 +110,22 @@
             <div class="content col-md-4 col-sm-12 col-xs-12">
                 <h3 class="title">the IOT platform for your new project</h3>
                 <div class="desc">
-                    <p>Connectingthings is a web platform that allows you the creation of custom dashboards using different visualization widgets</p>
+                    <p>ConnectingThings is a web platform that allows you the creation of custom dashboards using different visualization widgets</p>
                     <p>You can relate each widget to your device and start receiving information instantly through the different protocols </br>
-                       imaging controlling digital devices such as led or relays, you can do that with your prototype and turn it into a product
+                       imagine yourself controlling digital devices such as led or relays, imagine what can you do with your prototype and how you'll turn it into a product.
                     </p>
                     <p></p>
                 </div>
-                <div class="quote">
-                    <!--div class="quote-profile">
-                        <img class="img-responsive img-circle" src="assets/img/people/profile-s-1.png" alt="" />
-                    </div--><!--//profile-->
-                    <!--div class="quote-content">
-                        <blockquote><p><a href="https://twitter.com/3rdwave_themes" target="_blank">@velocity</a> Love it! Thank you for making my life easier and saving me time! I’ll definitely recommend it to my friends. :)</p></blockquote>
-                        <p class="source">@LisaW, Bristol</p>
-                    </div!--><!--//quote-content-->
-                </div><!--//quote-->
+                <!--div class="quote">
+                    <div class="quote-profile">
+                        <img class="img-responsive img-circle" src="https://avatars.io/twitter/YaninaOrrico/medium" alt="" style="max-height:80px " />
+                    </div>
+                    <div class="quote-content">
+                        <blockquote><p>
+                            <a href="https://twitter.com/C0nnectingThing" target="_blank">@C0nnectingThing</a> Love it! Thank you for making my life easier and saving me time! I’ll definitely recommend it to my friends. :)</p></blockquote>
+                        <p class="source">@YaninaOrrico, Argentina</p>
+                    </div>
+                </div--><!--//quote-->
             </div><!--//content-->
             <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
                 <div class="drop-shadow raised">
@@ -133,24 +135,26 @@
             </figure>
         </div><!--//item-->
     </div><!--//container-->
-</section><!--//why-->
-<section class="dark with-bg section-scroll" style="background-image: url( 'assets/img/iot-mockup.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 overlay-text col-sm-offset-0">
-                <div class="vertical-align">
-                    <h2>From prototype to production</h2>
-                    <p>Our platform is a full responsive web stack build for support your internet connected devices
-                        in a very easy and intuitive way. We make complex things easier,
-                    </p>
+</section>
+<section class="section-scroll " style="color: white;padding: 0px" >
+    <div class="container-fluid">
+        <div class="row img-holder" data-image="assets/img/iot-mockup.jpg">
+            <div class="overlay-bg black"></div>
+            <div class="row" style="margin-top: 10%;">
+                <div class="col-md-4 col-sm-4 col-xs-3 col-md-offset-2 col-sm-offset-4 col-xs-offset-4">
+                    <div   >
+                        <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 3em;padding-bottom: 20px;">Configure and Play</h2>
+                        <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">Our platform is a full responsive web stack build for support your internet connected devices
+                            in a very easy and intuitive way. We make complex things easier,
+                        </p>
+                        <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">Access from anywhere tablet, phone, computer our solution is crossbrowser compatible, check your sensors, or your camera
+                            control your lights, the possibilities are endless!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="overlay-bg black"></div>
-
 </section>
 
 <section  class="section why section-scroll" id="Why">
@@ -192,16 +196,41 @@
             </figure>
         </div><!--//item-->
     </div><!--//container-->
-</section><!--//why-->
+   </div>
+</section>
+<section class="section-scroll"  style="color: white;padding: 0px"  >
 
-<section class="dark with-bg section-scroll" style="background-image: url( 'assets/img/girlWithTablet.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-
-    <div class="container">
+    <div class="container img-holder" data-image="assets/img/placeit_v2.jpg">
         <div class="row">
-            <div class="col-sm-6 overlay-text col-sm-offset-6" style="margin-top: 300px;">
+            <div class="overlay-bg black"></div>
+            <div class="row" style="margin-top: 6%;">
+                <div class="col-md-4 col-sm-2 col-xs-2 col-md-offset-6 col-sm-offset-5 col-xs-offset-5">
                 <div class="vertical-align">
-                    <h2>You dashboard everywhere</h2>
-                    <p>
+                    <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 3em; padding-bottom: 20px;">From prototype to production</h2>
+                    <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">
+                        Just focus on your device, create your prototype we support you during the development with the most
+                        open protocols HTTP, COAP, MQTT, and the most customizable UI you can create your dashboard as you always dreamed!
+                    </p>
+                    <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">
+                        We are expert in software and hardware solution we can help you during you journey as a partners or consultants, contact us, we would more than happy to help you
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--section class=" section-scroll "  style="color: white;padding: 0px" >
+    <div class="container">
+        <div class="row img-holder" data-image="assets/img/girlWithTablet.jpg">
+            <div class="overlay-bg black"></div>
+            <div class="row" style="margin-top: 10%;">
+                <div class="col-md-4 col-sm-2 col-xs-2 col-md-offset-6 col-sm-offset-5 col-xs-offset-5">
+
+                <div class="vertical-align" >
+                    <h2 style="-webkit-transform: translateZ(1px);color: white;">You dashboard everywhere</h2>
+                    <p style="-webkit-transform: translateZ(1px);color: white;">
                         You'll be able to create a custom dashboard, as you always wanted accessible from any device.
                         Make your sensors work for you, side by side with your actuators and create your own army
                     </p>
@@ -210,14 +239,11 @@
         </div>
     </div>
 
-    <div class="overlay-bg black"></div>
-
-</section>
-
-<section class="section why section-scroll" id="How">
+</section!-->
+<!--section class="section why section-scroll" id="How">
     <div class="container">
         <h2 class="title text-center">How it works?</h2>
-        <!--p class="intro text-center">We take care of the UX and front-end design so you can save time building your site</p-->
+        <p class="intro text-center">We take care of the UX and front-end design so you can save time building your site</p>
         <div class="row item">
             <div class="content col-md-4 col-sm-12 col-xs-12">
                 <h3 class="title">Protocol oriented platform</h3>
@@ -227,45 +253,169 @@
                     <p><i class="fa fa-book"></i> <a href="#">Start with our tutorials</a></p>
                 </div>
                 <div class="quote">
-                    <!--div class="quote-profile">
+                    <div class="quote-profile">
                         <img class="img-responsive img-circle" src="assets/img/people/profile-s-1.png" alt="" />
-                    </div--><!--//profile-->
-                    <!--div class="quote-content">
+                    </div>
+                    <div class="quote-content">
                         <blockquote><p><a href="https://twitter.com/3rdwave_themes" target="_blank">@velocity</a> Love it! Thank you for making my life easier and saving me time! I’ll definitely recommend it to my friends. :)</p></blockquote>
                         <p class="source">@LisaW, Bristol</p>
-                    </div!--><!--//quote-content-->
+                    </div>
                 </div>
             </div>
             <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
                 <div class="drop-shadow raised">
                     <img class="img-responsive" src="assets/img/multiprotocol_comunication.png" alt="" />
-                    <!--figcaption class="figure-caption">(Screenshot: Coral - App &amp; website startup kit) </figcaption-->
+                    <figcaption class="figure-caption">(Screenshot: Coral - App &amp; website startup kit) </figcaption>
                 </div>
             </figure>
         </div>
     </div>
-</section>
+</section!-->
 
 <!-- Call to Action
 ================================================== -->
-<section class="cta text-center section-scroll" id="contact" style="background: url('assets/img/bg-locations.jpg') center center no-repeat; background-size: cover;min-height: 400px" >
-
+<section id="Features" class="features-tabbed section">
     <div class="container">
-
+        <h2 class="title text-center">Platform Features</h2>
         <div class="row">
-            <div class="col-lg-12" style="padding-top: 60px;">
-                <h2 style="color: white;">Be part of our beta release </h2>
-                <p><!--button class="btn contact-button" type="button" role="button"  style="opacity: 0.8;">Click here</button--></p>
-                <div class='contact-form' style="display: block;">
-                <iframe id="doppler_subscription" src="http://app2.fromdoppler.com/Lists/FormProcessing/Form?idForm=qxONE4SKmQNoCUqh2YCYbg%3d%3d"  style=" border-radius: 15px; opacity: 0.8; overflow-y: hidden; height:325px width:425"  height="325" width="425"  scrolling="no"  frameborder="no" ></iframe>
-                </div>
-            </div>
-        </div>
+            <div class=" text-center col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs text-center" role="tablist">
+                    <li class="active"><a href="#feature-1" role="tab" data-toggle="tab"><i class="fa fa-cloud"></i><br /><span class="hidden-sm hidden-xs">Multi-Protocol</span></a></li>
+                    <li><a href="#feature-2" role="tab" data-toggle="tab"><i class="fa fa-users"></i><br /><span class="hidden-sm hidden-xs">Public Views</span></a></li>
+                    <li><a href="#feature-3" role="tab" data-toggle="tab"><i class="fa fa-video-camera"></i><br /><span class="hidden-sm hidden-xs">Cameras IP</span></a></li>
+                    <li class="last"><a href="#feature-4" role="tab" data-toggle="tab"><i class="fa fa-flash"></i><br /><span class="hidden-sm hidden-xs">Triggers</span></a></li>
 
-    </div>
+                </ul><!--//nav-tabs-->
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="feature-1">
+                        <h3 class="title sr-only">MultiProtocol Architecture</h3>
+                        <figure class="figure text-center drop-shadow raised">
+                            <img class="img-responsive" src="assets/img/multiprotocol_comunication.png" alt="" />
+                            <figcaption class="figure-caption">(Screenshot source: Coral - App &amp; website startup kit)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>ConnectingThings was specially thaught as an agnostic protocol platform compatible to all electronic devices<p>
+                            <p>
+                                We focus to support you during development whenever technology you chosen for you project you can use Arduino,
+                                RaspberryPi, BananaPi, Netduino, etc .. using open standard protocols you can use any language in any device, the only requirement is
+                                know how to use this simple open protocols and implement it in your device.
+                            </p>
+
+                            <!--p class="box">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero ultricies tempus. Duis porta justo quam, ut ultrices felis posuere sit amet. Sed imperdiet bibendum est, sit amet sagittis ante sagittis eu. Ut consequat volutpat sapien sed lobortis. Nullam laoreet vitae justo nec dignissim.
+                            </p!-->
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                    <div class="tab-pane" id="feature-2">
+                        <h3 class="title sr-only">Public Views</h3>
+                        <figure class="figure text-center drop-shadow raised">
+                            <img class="img-responsive" src="http://content.screencast.com/users/mravinales/folders/Jing/media/8419d8ec-8ce9-4bb4-a963-5ff0b8ba9457/2015-11-24_2111.png" alt="" />
+                            <figcaption class="figure-caption">(public views)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>
+                                ConnectingThings allows you the creation of public views from your private dashboard, in other words you can share all panels sections
+                                or dashboards that your own as you want
+                            </p>
+                            <p>
+                                Share with your friend, co-workers or family the state of your sensors, cameras or actuators, share your realtime information with the with just a link,
+                                or even in your social networks
+                            </p>
+                            <p>
+                               Create a IOT profile with your sensors and share it with the world !
+                            </p>
+                            <!--ul class="list-unstyled">
+                                <li><i class="fa fa-star"></i>Lorem ipsum dolor sit amet.</li>
+                                <li><i class="fa fa-star"></i>Aliquam tincidunt mauris eu risus.</li>
+                                <li><i class="fa fa-star"></i>Ultricies eget vel aliquam libero.</li>
+                                <li><i class="fa fa-star"></i>Maecenas nec odio.</li>
+                            </ul!-->
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="feature-3">
+                        <h3 class="title sr-only">Cameras IP</h3>
+                        <figure class="figure text-center drop-shadow raised">
+                            <img class="img-responsive" src="http://content.screencast.com/users/mravinales/folders/Jing/media/28cb0b74-ebce-4518-a3bb-61f012c5f727/2015-11-24_2114.png" alt="" />
+                            <figcaption class="figure-caption">(Control your Ip camera)</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p></p>
+                            <p>
+                               Imagine that you are away from your home, and yes you have your sensors and your actuators everything works perfect, but something is missing...
+                            </p>
+                            <p>
+                                you have installed an actuator that turns on and off the light, but how do I know that really happens? how lovely would be nice to add an Ip camera!!
+                               ok, ok but you would feel that is not enaugh
+                            </p>
+                            <p>
+                               ConnectingThings is the all in one solution check your sensors, control your devices from everywhere!, and see that happening live all in the same platform.
+                            </p>
+                            <!--blockquote>
+                                <p>Viverra magna pellentesque in magnis gravida sit augue felis vehicula vestibulum semper penatibus justo ornare semper Gravida felis platea arcu mus non. Montes at posuere. Natoque.</p>
+                            </blockquote!-->
+
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+                    <div class="tab-pane" id="feature-4">
+                        <h3 class="title sr-only">Triggers</h3>
+                        <figure class="figure text-center drop-shadow raised">
+                            <img class="img-responsive" src="http://content.screencast.com/users/mravinales/folders/Jing/media/088a19ed-6071-4bb2-b188-780d3a9c7afe/2015-11-24_2117.png" alt="" />
+                            <figcaption class="figure-caption">Send notifications from your sensors</figcaption>
+                        </figure>
+                        <div class="desc text-left">
+                            <p>
+                                One feature that we can not miss is the triggering functionality, you can program that any value from any sensor to trigger a notification
+                                currently you can program an email to any adress, but we are working to add more kind of notifications such as,SMS, push notifications etc...
+                            </p>
+                            <p>
+                                Not only you can program trigger values, you can disable the triggers instead of delete them and use it whenever is necessary , another functionality is for filtering or deactivate notifications for a certain amount of time
+                                imaging that if you are sending many notification that triggers constantly it can be kind of annoying, for that we implemented the 'Threshold' functionality in order to avoid that constant triggering.
+                            </p>
+
+                            <!--div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr> <th>Nullam consequat</th> <th>Commodo metus</th> <th>Dapibus porta</th> <th>Sed porta</th> </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr> <td>Faucibus purus</td> <td>Aliquam sit</td> <td>Sed porta leo</td> <td>Duis ut ornare dui</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div-->
+                        </div><!--//desc-->
+                    </div><!--//tab-pane-->
+
+                </div><!--//tab-content-->
+            </div><!--//col-md-x-->
+        </div><!--//row-->
+    </div><!--//container-->
 
 </section>
 
+<!-- ******Steps Section****** -->
+<section class="steps section">
+    <div class="container">
+        <h2 class="title text-center">3 Simple Steps to Get you started with ConnectingThings</h2>
+        <div class="row">
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">1</span><br /><span class="text">Beta Subscription</span></h3>
+                <p>Suscribe to our Beta users list, and we'll send you an email for your first login!</p>
+            </div><!--//step-->
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">2</span><br /><span class="text">Create a new dashboard</span></h3>
+                <p>Create a new dashboard for your temperature sensor with our wizard</p>
+            </div><!--//step-->
+            <div class="step text-center col-md-4 col-sm-4 col-xs-12">
+                <h3 class="title"><span class="number">3</span><br /><span class="text">Integrate your device</span></h3>
+                <p>Download the code examples from GitHub program your device and start receiving realtime status from your sensors!</p>
+            </div><!--//step-->
+        </div><!--//row-->
+        <div class="text-center"><a class="btn btn-cta btn-cta-primary" data-toggle="modal" data-target="#myModal">Get Started - It's Free</a></div>
+    </div><!--//container-->
+</section><!--//steps-->
 
 <!-- Footer
 ================================================== -->
@@ -278,9 +428,9 @@
                     <div class="footer-logo">
                         <h2>Connecting Things</h2>
                         <p>made with <span class="fa fa-heart"></span> from Santa Fe, Argentina<br></p>
-                        <p class="muted">© 2014 Connecting Things.</p>
-                        <!--a href="#">Terms of Service</a>
-                        <a href="#">Privacy</a-->
+                        <p class="muted">© 2015 Connecting Things.</p>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy</a>
                     </div>
                 </div>
 
@@ -288,54 +438,69 @@
                     <h3>Company</h3>
                     <ul class="list-unstyled">
                         <li><a href="#intro-video">Home</a></li>
-                        <li><a href="#What">What</a></li>
-                        <li><a href="#Why">Why</a></li>
-                        <li><a href="#How">How</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#What">What Is?</a></li>
+                        <li><a href="#Why">Why?</a></li>
+                        <li><a href="#Features">Features</a></li>
                         <!--li><a href="#">Jobs&emsp;<span class="label label-info">We're hiring!</span></a></li-->
                     </ul>
                 </div>
                 <div class="col-sm-2 col-md-2">
                     <h3>Documentation</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#">Product Help</a></li>
-                        <li><a href="#">Developer API</a></li>
+                        <li><a href="https://connectingthings.readme.io/">Product Docs</a></li>
+                        <li><a href="https://connectingthings.zendesk.com/">Help</a></li>
+                        <li><a href="https://blog.connectingthings.io/">Blog</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a class="icon" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="icon" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                <a class="icon" href="#" target="_blank"><i class="fa fa-globe"></i></a>
+                <a class="icon" href="https://twitter.com/c0nnectingthing" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="icon" href="https://plus.google.com/u/0/116321369686578257265" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <!--a class="icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a!-->
+                <a class="icon" href="https://www.linkedin.com/company/connectingthings" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="icon" href="https://trello.com/connectingthings" target="_blank"><i class="fa fa-trello"></i></a>
+                <a class="icon" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
     </div>
 
 </footer>
 
-
+<!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog" style="width: 427px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Be part of our beta release</h4>
+                </div>
+                <div   style="display: block;">
+                    <iframe id="doppler_subscription" src="http://app2.fromdoppler.com/Lists/FormProcessing/Form?idForm=qxONE4SKmQNoCUqh2YCYbg%3d%3d"  style=" border-radius: 15px; opacity: 0.8; overflow-y: hidden; height:325px width:425"  height="325" width="425"  scrolling="no"  frameborder="no" ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery-1.10.2.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<!--script src="assets/js/bootstrap.min.js"></script!-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/cbpAnimatedHeader.min.js"></script>
 <script src="assets/js/jquery.mb.YTPlayer.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/scrollReveal.js"></script>
-<script src="assets/js/isotope.min.js" defer="defer"></script>
 <script src="assets/js/imagesloaded.pkgd.min.js" defer="defer"></script>
 <script src="assets/js/jquery.scrollTo.js" defer="defer"></script>
 <script src="assets/js/jquery.nav.js" defer="defer"></script>
-<script src="assets/js/jquery.nav.js" defer="defer"></script>
 <script src="assets/js/jquery.onepage-scroll.js" defer="defer"></script>
 <script src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/jquery.imageScroll.min.js"></script>
 <!--script src="//localhost:35729/livereload.js"></script!-->
 
 <script>
