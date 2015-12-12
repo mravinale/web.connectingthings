@@ -143,12 +143,12 @@ function toggleContactForm() {
 
 /* --- scrollReveal ------------------- */
 
-window.scrollReveal = new scrollReveal();
+//window.sr = new scrollReveal();
   
 
 
 /* --- magnific popup ------------------- */
-/*
+
 function magnificPopup() {
 
   // Gallery
@@ -219,7 +219,7 @@ function magnificPopup() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 }
-*/
+
 
 
 
@@ -422,6 +422,6 @@ $('#name').focus(function() {
   });
 
 $(document).ready(function(){
-    $(".player").mb_YTPlayer();
+  //  $(".player").mb_YTPlayer();
 
 });

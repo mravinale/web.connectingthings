@@ -15,17 +15,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"!-->
+    <link rel="stylesheet" href="assets/css/minified.css">
 
-    <link href="assets/css/theme.css" rel="stylesheet">
-    <link href="assets/css/shadows.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
+    
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
@@ -36,7 +29,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="assets/js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -102,7 +94,7 @@
 </div>
 
 
-<section class="section why section-scroll"  id="What">
+<section data-sr class="section why section-scroll"  id="What">
     <div class="container">
         <h2 class="title text-center">What is connectingthings?</h2>
         <!--p class="intro text-center">We take care of the UX and front-end design so you can save time building your site</p-->
@@ -136,14 +128,14 @@
         </div><!--//item-->
     </div><!--//container-->
 </section>
-<section class="section-scroll " style="color: white;padding: 0px" >
+<section data-sr class="section-scroll " style="color: white;padding: 0px" >
     <div class="container-fluid">
         <div class="row img-holder" data-image="assets/img/iot-mockup.jpg">
             <div class="overlay-bg black"></div>
             <div class="row" style="margin-top: 10%;">
                 <div class="col-md-4 col-sm-4 col-xs-3 col-md-offset-2 col-sm-offset-4 col-xs-offset-4">
                     <div   >
-                        <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 3em;padding-bottom: 20px;">Configure and Play</h2>
+                        <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 2.5em;padding-bottom: 20px;">Configure and Play</h2>
                         <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">Our platform is a full responsive web stack build for support your internet connected devices
                             in a very easy and intuitive way. We make complex things easier,
                         </p>
@@ -157,7 +149,7 @@
     </div>
 </section>
 
-<section  class="section why section-scroll" id="Why">
+<section data-sr class="section why section-scroll" id="Why">
     <div class="container">
         <h2 class="title text-center">Why connectingthings?</h2>
         <!--p class="intro text-center">A iot platform from developers to developers</p-->
@@ -198,7 +190,7 @@
     </div><!--//container-->
    </div>
 </section>
-<section class="section-scroll"  style="color: white;padding: 0px"  >
+<section data-sr class="section-scroll"  style="color: white;padding: 0px"  >
 
     <div class="container img-holder" data-image="assets/img/placeit_v2.jpg">
         <div class="row">
@@ -206,7 +198,7 @@
             <div class="row" style="margin-top: 6%;">
                 <div class="col-md-4 col-sm-2 col-xs-2 col-md-offset-6 col-sm-offset-5 col-xs-offset-5">
                 <div class="vertical-align">
-                    <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 3em; padding-bottom: 20px;">From prototype to production</h2>
+                    <h2 style="-webkit-transform: translateZ(1px);color: white;font-size: 2.5em; padding-bottom: 20px;">From prototype to production</h2>
                     <p style="-webkit-transform: translateZ(1px);color: white;font-size: 1.1em;">
                         Just focus on your device, create your prototype we support you during the development with the most
                         open protocols HTTP, COAP, MQTT, and the most customizable UI you can create your dashboard as you always dreamed!
@@ -274,7 +266,7 @@
 
 <!-- Call to Action
 ================================================== -->
-<section id="Features" class="features-tabbed section">
+<section data-sr id="Features" class="features-tabbed section">
     <div class="container">
         <h2 class="title text-center">Platform Features</h2>
         <div class="row">
@@ -396,7 +388,7 @@
 </section>
 
 <!-- ******Steps Section****** -->
-<section class="steps section">
+<section data-sr class="steps section">
     <div class="container">
         <h2 class="title text-center">3 Simple Steps to Get you started with ConnectingThings</h2>
         <div class="row">
@@ -419,7 +411,7 @@
 
 <!-- Footer
 ================================================== -->
-<footer class="footer section-scroll">
+<footer data-sr class="footer section-scroll">
 
     <div class="container">
         <div class="row">
@@ -470,7 +462,7 @@
 </footer>
 
 <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
+ <div  class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog" style="width: 427px;">
             <div class="modal-content">
                 <div class="modal-header">
@@ -488,10 +480,10 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/jquery-1.10.2.min.js"></script>
+<!--script src="assets/js/jquery-1.10.2.min.js"></script>
 <!--script src="assets/js/bootstrap.min.js"></script!-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="assets/js/classie.js"></script>
+
+<!--script src="assets/js/classie.js"></script>
 <script src="assets/js/cbpAnimatedHeader.min.js"></script>
 <script src="assets/js/jquery.mb.YTPlayer.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
@@ -503,7 +495,11 @@
 <script src="assets/js/custom.js"></script>
 <script type="text/javascript" src="assets/js/jquery.imageScroll.min.js"></script>
 <!--script src="//localhost:35729/livereload.js"></script!-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/minified.js" defer="defer"></script>
 
+<script src="assets/js/custom.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -250,6 +250,7 @@ blockquote {
 .dropdown-menu > .active > a:focus {
   background-color: #202127;
 }
+
 .preloader {
   position: fixed;
   top: 0px;
