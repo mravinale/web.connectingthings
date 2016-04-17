@@ -7,6 +7,7 @@ $(window).load(function(){
 });
 
 $(document).ready(function() {
+  menuBinding();
   fullScreenContainer();
   owlCarousel();
   magnificPopup();
@@ -32,6 +33,18 @@ function init() {
   });
 }
 
+// Menu Binding
+
+function menuBinding() {
+  $('.menu-link, #close-menu').on('click', function(event) {
+      $('#responsive-menu, .menu__overlay').toggleClass('active');
+  });
+
+  $('.menu__overlay').on('click', function(event) {
+      $('#responsive-menu').toggleClass('active');
+      $(this).toggleClass('active');
+  });
+}
 
 
 /* --- Full Screen Container ------------- */

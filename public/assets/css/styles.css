@@ -3384,3 +3384,118 @@ img.perfect-fit {
     min-height: 100%;
     overflow:hidden;
 }
+
+/* Responsive Menu */
+
+.menu__overlay {
+  position: absolute;
+  z-index: -9999;
+
+  width: 100%;
+  height: 100%;
+
+  transition: opacity .5s ease;
+
+  opacity: 0;
+  background: #030613;
+}
+
+.menu__overlay.active {
+  overflow-x: hidden;
+
+  position: fixed;
+  z-index: 9998;
+
+  opacity: .4;
+  background: #030613;
+}
+
+#responsive-menu {
+  overflow-x: hidden;
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: -320px;
+
+  width: 320px;
+  height: 100%;
+  padding: 1.875rem;
+
+  transition: all .2s ease;
+
+  background: #333;
+}
+
+#responsive-menu.active {
+  right: 0;
+}
+
+.buttons-container {
+  display: block;
+
+  text-align: right;
+}
+
+.buttons-container .close-menu {
+  font-size: .75rem;
+  font-weight: 600;
+
+  padding-top: .625rem;
+
+  cursor: pointer;
+
+  color: #665550;
+}
+
+.buttons-container .close-menu i {
+  font-size: 15px;
+  font-weight: 600;
+
+  padding-left: .3125rem;
+
+  transition: all .4s ease-in-out;
+  vertical-align: middle;
+
+  color: #fff;
+}
+
+.buttons-container .close-menu i:hover {
+  color: #ec6952;
+}
+
+.nav--menu-reponsive {
+  padding: 35px 20px;
+}
+
+.nav--menu-reponsive ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav--menu-reponsive ul li {
+  margin-bottom: 10px;
+}
+
+.nav--menu-reponsive ul li a {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 300;
+
+  text-decoration: none;
+  letter-spacing: .25px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.nav--menu-reponsive ul li a:hover {
+  color: #ec6952;
+}
+
+.menu-link {
+  cursor: pointer;
+
+  color: #fff;
+}
