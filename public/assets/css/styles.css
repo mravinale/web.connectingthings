@@ -3427,7 +3427,6 @@ img.perfect-fit {
   background: #333;
 }
 
-
 #responsive-menu.active {
   right: 0;
 }
@@ -3461,11 +3460,11 @@ img.perfect-fit {
   color: #fff;
 }
 
-.buttons-container .close-menu i:hover{
+.buttons-container .close-menu i:hover {
   color: #ec6952;
 }
 
-.nav--menu-reponsive{
+.nav--menu-reponsive {
   padding: 35px 20px;
 }
 
@@ -3491,11 +3490,12 @@ img.perfect-fit {
   color: #fff;
 }
 
-.nav--menu-reponsive ul li a:hover{
+.nav--menu-reponsive ul li a:hover {
   color: #ec6952;
 }
 
 .menu-link {
   cursor: pointer;
+
   color: #fff;
 }
