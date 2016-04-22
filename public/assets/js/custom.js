@@ -47,10 +47,10 @@ function menuBinding() {
 }
 
 //Video Integration -- Basically stops the video on modal on close
-  var vidUrl = $("iframe#video-frame").attr('src');
-  $('#video-btn-close').on('click', function(e) {
-      $("iframe#video-frame").attr('src', vidUrl);
-  });
+var vidUrl = $("iframe#video-frame").attr('src');
+$('#video-btn-close').on('click', function(e) {
+    $("iframe#video-frame").attr('src', vidUrl);
+});
 
 
 /* --- Full Screen Container ------------- */
