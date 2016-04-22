@@ -3500,3 +3500,80 @@ img.perfect-fit {
 
   color: #fff;
 }
+
+/*Modal Integration*/
+
+.modalDialog {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transition: opacity .6s ease;
+  pointer-events: none;
+
+  opacity: 0;
+  background: rgba(10,10,10,.9);
+}
+
+.modalDialog > div.modalDialog__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+  background: 0 0;
+}
+
+.modalDialog > div.modalDialog__content > iframe {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: 0 auto;
+
+  transform: translate(-50%,-50%);
+}
+
+.modalDialog:target {
+  pointer-events: auto;
+
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  z-index: 50;
+  top: 4.5%;
+  right: 2.5%;
+
+  font-weight: 300;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.close:before {
+  clear: both;
+
+  font-size: 40px;
+
+  content: 'X';
+}
+
+.close:hover {
+  color: #ec6952;
+}
+
+
