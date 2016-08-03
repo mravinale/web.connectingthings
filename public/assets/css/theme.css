@@ -1,7 +1,7 @@
 body {
   /*background: #f6f6f6;*/
     background-color: #fff;
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 .no-padding {
   padding: 0 !important;
@@ -56,10 +56,10 @@ body {
   display: block;
 }
 .style-switcher li:nth-child(1) {
-  border-left: 8px solid #ec6952;
+  border-left: 8px solid #4ab8ba;
 }
 .style-switcher li:nth-child(1):hover {
-  border-left: 2em solid #ec6952;
+  border-left: 2em solid #4ab8ba;
 }
 .style-switcher li:nth-child(2) {
   border-left: 8px solid #4aa1db;
@@ -97,7 +97,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -106,10 +106,10 @@ p {
   line-height: 1.75;
 }
 a {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 a:hover {
-  color: #ec6952;
+  color: #4ab8ba;
   text-decoration: underline;
 }
 blockquote {
@@ -119,7 +119,7 @@ blockquote {
   color: white !important;
 }
 .highlight {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 .vertical-align {
   margin: 100px 0;
@@ -141,8 +141,8 @@ blockquote {
 }
 .btn.btn-empty {
   background: none !important;
-  border: 2px solid #ec6952;
-  color: #ec6952 !important;
+  border: 2px solid #4ab8ba;
+  color: #4ab8ba !important;
 }
 .btn.btn-empty:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
@@ -322,7 +322,7 @@ blockquote {
   padding: 1em 0;
 }
 .navbar .navbar-nav .current > a {
-  color: #ec6952 !important;
+  color: #4ab8ba !important;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
@@ -342,7 +342,7 @@ blockquote {
   font-size: 0.9em;
 }
 .navbar .nav > li ul .dropdown-header {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 .navbar-brand,
 .navbar-nav > li > a {
@@ -403,9 +403,7 @@ blockquote {
   line-height: 70px;
 }
 .cbp-af-header h1 {
-  text-transform: uppercase;
   color: white;
-  letter-spacing: 4px;
   font-size: 2em;
   margin: 0.9em 0;
   float: left;
@@ -419,7 +417,7 @@ blockquote {
 }
 .cbp-af-header .nav li.open > a {
   background: none;
-  color: #ec6952;
+  color: #4ab8ba;
 }
 .cbp-af-header .nav li ul a {
   color: #333333;
@@ -428,17 +426,17 @@ blockquote {
 }
 .cbp-af-header .nav a {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   margin: 0 0 0 20px;
   font-size: 1em;
   text-transform: uppercase;
 }
 .cbp-af-header .nav a.signup {
-  color: #ec6952 !important;
+  color: #4ab8ba !important;
 }
 .cbp-af-header .nav a:hover {
-  color: #ec6952;
+  color: #4ab8ba;
   background: none;
 }
 /* Transitions and class for reduced height */
@@ -571,10 +569,10 @@ blockquote {
   border-radius: 4px;
 }
 .login-part input:focus {
-  border-color: #ec6952;
+  border-color: #4ab8ba;
 }
 .login-part button[type='submit'] {
-  background: #ec6952;
+  background: #4ab8ba;
   padding: 17px;
 }
 .login-part button[type='submit']:hover {
@@ -599,7 +597,7 @@ blockquote {
   padding: 0 1.5em;
 }
 .login-part p.disclaimer a {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 #signup .login-part {
   height: 362px;
@@ -685,7 +683,7 @@ section .login-overlay {
   cursor: url(../img/grabbing.png) 8 8, move;
 }
 /*
-*   Owl Carousel Owl Demo Theme 
+*   Owl Carousel Owl Demo Theme
 * v1.3.2
 */
 .owl-theme-main .owl-controls .owl-page.active span,
@@ -1229,7 +1227,7 @@ section .login-overlay {
 #intro-video .carousel-caption-center .btn {
   margin: 1em 0;
   padding: 1em 2em;
-  background: #ec6952;
+  background: #4ab8ba;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1268,7 +1266,7 @@ section .login-overlay {
 #intro-video .carousel-caption-left .btn {
   margin: 1em 0;
   padding: 1em 2em;
-  background: #ec6952;
+  background: #4ab8ba;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1504,7 +1502,7 @@ section h3 {
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #ec6952;
+  color: #4ab8ba;
   letter-spacing: 1px;
 }
 section p {
@@ -1596,17 +1594,17 @@ section.cta p:last-child {
   padding-bottom: 0;
 }
 section.cta .btn {
-  background: #ec6952;
+  background: #4ab8ba;
   color: white;
   padding: 0.5em 2em;
   font-size: 1em;
   margin: 0 1em;
-  border: 2px solid #ec6952;
+  border: 2px solid #4ab8ba;
   text-transform: uppercase;
 }
 section.cta .btn:hover {
-  background: #ec6952;
-  border-color: #ec6952;
+  background: #4ab8ba;
+  border-color: #4ab8ba;
 }
 section .overlay-text {
   z-index: 10;
@@ -1706,7 +1704,7 @@ section .overlay-text {
   margin: 2em 0;
 }
 #pricing .plan .plan-cta .plan-buy .btn {
-  background: #ec6952;
+  background: #4ab8ba;
   padding: 10px 30px;
   font-size: 1em;
   font-weight: 300;
@@ -1765,10 +1763,10 @@ section .overlay-text {
   content: '';
 }
 #testimonials .carousel blockquote a {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 #testimonials .carousel blockquote a:hover {
-  color: #ec6952;
+  color: #4ab8ba;
   text-decoration: underline;
 }
 #portfolio .portfolio-item {
@@ -1858,7 +1856,7 @@ section .overlay-text {
   line-height: 35px;
   border: 1px solid #fff;
   border-radius: 50%;
-  color: #ec6952;
+  color: #4ab8ba;
   text-decoration: none;
 }
 .grid figcaption a.preview {
@@ -2015,7 +2013,7 @@ section .overlay-text {
   padding: 1em 0;
 }
 .contact-form footer button {
-  background: #ec6952;
+  background: #4ab8ba;
   border-radius: 4px;
   border: 0;
   color: white;
@@ -2052,7 +2050,7 @@ footer.footer .footer-logo a {
   color: #C9CACC;
 }
 footer.footer .footer-logo a:hover {
-  color: #ec6952;
+  color: #4ab8ba;
   text-decoration: none;
 }
 footer.footer h2 {
@@ -2079,7 +2077,7 @@ footer.footer ul li a {
   color: #C9CACC;
 }
 footer.footer ul li a:hover {
-  color: #ec6952;
+  color: #4ab8ba;
   text-decoration: none;
 }
 footer.footer .copyright {
@@ -2106,7 +2104,7 @@ footer.footer .icon {
   font-size: 1em;
 }
 .icon:hover {
-  color: #ec6952;
+  color: #4ab8ba;
 }
 .icons .icon-wrapper {
   width: 140px;
@@ -2287,7 +2285,7 @@ footer.footer .icon {
   box-shadow: 0px 0px 0px 2px #b5cd60;
 }
 .modal-form input[type="submit"] {
-  background: #ec6952;
+  background: #4ab8ba;
   border: 0;
   color: white;
   font-weight: bold;
